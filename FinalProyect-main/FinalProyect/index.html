@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Calculadoras</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1>Página de Calculadoras</h1>
+    <h2 id="pageTitle">Seleccione una opción</h2>
+    <button id="button1"  onclick="updateTitle('Calculadora Básica')">Calculadora Básica</button>
+    <button id="button2" onclick="updateTitle('Calculadora de conversión de Unidades')">Calculadora de conversión de Unidades</button>
+    <button id="button3" onclick="updateTitle('Conversión de peso')">Conversión de peso</button>
+    <button id="button4" onclick="updateTitle('Conversión de temperatura')">Conversión de temperatura</button>
+    <button id="button5" onclick="updateTitle('Conversión de decimal a binario')">Conversión de decimal a binario</button>
+    <button id="button6" onclick="updateTitle('Conversión de decimal a sexagesimal')">Conversión de decimal a sexagesimal</button>
+    <button id="returnMenu" onclick="restoreButtons()">Regresar al inicio</button>
+    <script src="./calculator.js"></script>
+</body>
+</html>     
