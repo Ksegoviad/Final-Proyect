@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Calculadoras</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <div>
+
+        <div class="login-container" id="loginContainer"> 
+            <h1>Iniciar Sesión</h1>
+            <form id="loginForm">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+            <div id="loginMessage"></div>
+        </div>
+
+
+        <div class="pagina-Container" id="paginaContainer" style="display: none;">
+            <h2><strong>Página de Calculadoras</strong></h2>
+            <h3 id="pageTitle">Seleccione una opción</h3>
+            <button id="button1" onclick="basicCalculator()">Calculadora Básica</button>
+            <button id="button2" onclick="updateTitle('Calculadora de conversión de Unidades')">Calculadora de conversión de Unidades</button>
+            <button id="button3" onclick="updateTitle('Conversión de masa')">Conversión de masa</button>
+            <button id="button4" onclick="updateTitle('Conversión de temperatura')">Conversión de temperatura</button>
+            <button id="button5" onclick="updateTitle('Conversión de decimal a binario')">Conversión de decimal a binario</button>
+            <button id="button6" onclick="updateTitle('Conversión de decimal a sexagesimal')">Conversión de decimal a sexagesimal</button>
+            <button id="buttonMenu" onclick="returnMenu()">Regresar al inicio</button>
+
+            
+            <form name="calculator">
+                <main>
+                    <div id="calculator">
+                        <input class="textfield" type="text" name="ans" value="" autocomplete="off" readonly>
+                        <input type="button" value="7" onclick="document.calculator.ans.value+='7'" class="grey">
+                        <input type="button" value="8" onclick="document.calculator.ans.value+='8'" class="grey">
+                        <input type="button" value="9" onclick="document.calculator.ans.value+='9'" class="grey">
+                        <input id="erase" type="button" value="←" onclick="document.calculator.ans.value = document.calculator.ans.value.slice(0,-1)" class="orange">
+                        <input type="reset" value="C" class="orange">
+                        <br>
+                        <input type="button" value="4" onclick="document.calculator.ans.value+='4'" class="grey">
+                        <input type="button" value="5" onclick="document.calculator.ans.value+='5'" class="grey">
+                        <input type="button" value="6" onclick="document.calculator.ans.value+='6'" class="grey">
+                        <input type="button" value="X" onclick="document.calculator.ans.value+='*'" class="orange">
+                        <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="orange">
+                        <br>
+                        <input type="button" value="1" onclick="document.calculator.ans.value+='1'" class="grey">
+                        <input type="button" value="2" onclick="document.calculator.ans.value+='2'" class="grey">
+                        <input type="button" value="3" onclick="document.calculator.ans.value+='3'" class="grey">
+                        <input type="button" value="+" onclick="document.calculator.ans.value+='+'" class="orange">
+                        <input type="button" value="-" onclick="document.calculator.ans.value+='-'" class="orange">
+                        <br>
+                        <input type="button" value="0" onclick="document.calculator.ans.value+='0'" class="grey">
+                        <input type="button" value="." onclick="document.calculator.ans.value+='.'" class="grey">
+                        <input type="button" value="<3" onclick="document.calculator.ans.value+='<3'" class="grey">
+                        <input type="button" value="=" onclick="document.calculator.ans.value = eval(document.calculator.ans.value)" class="buttonEqual">
+                    </div>
+                </main>
+            </form>
+        </div>
+    </div>
+    <script src="./calculator.js"></script>
+</body>
+</html>
