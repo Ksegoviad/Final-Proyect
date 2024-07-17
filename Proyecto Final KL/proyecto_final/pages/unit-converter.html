@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Unidades</title>
+    <link rel="stylesheet" href="../css/unit-converter.css">
+</head>
+<body>
+    <a href="./../index.html" class="volver">Volver</a>
+
+    <form name="unit-converter">
+        <label for="number_to_convert">Número a convertir</label>
+        <input type="number" name="number_to_convert" id="number_to_convert" placeholder="0" min="0">
+        <br>
+        <select name="unit_type_from" id="unit_type_from">
+            <option value="km">Kilómetro</option>
+            <option value="m">Metro</option>
+            <option value="cm">Centímetro</option>
+            <option value="mm">Milímetro</option>
+        </select>
+
+        <br><br>
+
+        <label for="unit_type_to">Unidad a la cual convertir</label>
+        <select name="unit_type_to" id="unit_type_to">
+            <option value="km">Kilómetro</option>
+            <option value="m">Metro</option>
+            <option value="cm">Centímetro</option>
+            <option value="mm">Milímetro</option>
+        </select>
+
+        <br><br>
+
+        <button type="button" onclick="convert()">Convertir</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script src="../js/unit-converter.js"></script>
+</body>
+</html>
