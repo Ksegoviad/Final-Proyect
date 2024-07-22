@@ -4,6 +4,7 @@ function convert() {
     const toUnit = document.getElementById('unit_type_to').value;
     let result;
 
+
     // Conversión a gramos (unidad base)
     switch (fromUnit) {
         case 'Ton':
@@ -44,6 +45,8 @@ function convert() {
         default:
             break;
     }
+    
+
 
     document.getElementById('result').innerText = `Resultado: ${result} ${toUnit}`;
 }
