@@ -29,7 +29,8 @@
 
 # Functional Requirements
 1. Basic Calculator
-   	###Realizar operaciones matemáticas básicas:
+   
+### Realizar operaciones matemáticas básicas:
 - Addition
 - subtraction 
 - multiplication 
