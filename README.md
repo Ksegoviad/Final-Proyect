@@ -28,9 +28,9 @@
 3. Inside de calculator there is a "button" to return to the main menu.
 
 # Functional Requirements
-1. Basic Calculator
+## 1. Basic Calculator
    
-### Realizar operaciones matemáticas básicas:
+### Perform basic mathematical operations:
 - Addition
 - subtraction 
 - multiplication 
@@ -39,6 +39,32 @@
 - Deletion of all entry
 - Evaluation of the entered expression
 
-2. Entry of numbers and operators through buttons.
+### Entry of numbers and operators through buttons.
+### Show the result of the operation.
+## 2. Unit converter
 
-3.	Show the result of the operation.
+   ### Conversion between different units of length:
+   - Kilometer (km)
+   - Meter (m)
+   - Centimeter (cm)
+   - Millimeter (mm)
+  
+  ### Entering a number to convert.
+  ### Selection of source drive and destination drive.
+  ### Show the conversion result.
+
+  ## 3. Weight-mass converter.
+
+  ### Conversion between different weight units:
+  - Ton (Ton)
+  - Kilogram (Kg)
+  - Pound (Lb)
+  - Gram (g)
+  - Ounce (Onz)
+
+  ### Entering a number to convert.
+  ### Selection of source drive and destination drive.
+  ### Show the conversion result.
+## 4. Temperature Converter
+### Conversion between different temperature units:
+
