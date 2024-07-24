@@ -1,10 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('path/to/your/background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #ffeef2; /* Rosa pastel muy claro */
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +12,7 @@ body {
 }
 
 form {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -67,3 +66,5 @@ a.volver {
 a.volver:hover {
     color: #b8656b; /* Color rosa pastel más oscuro */
 }
+
+

@@ -14,7 +14,7 @@
 
 body {
   background-color: rgb(255, 213, 227);
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Arial", sans-serif;
   font-size: 18px;
   color: var(--light-grey);
   padding: 0 15px;
@@ -82,4 +82,14 @@ h1 {
   #result {
     max-width: 460px;
   }
+}
+a.volver {
+  color: #84507d;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a.volver:hover {
+  color: #1a252f;
 }

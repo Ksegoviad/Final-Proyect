@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de decimales a sexagesimales</title>
+    <link rel="stylesheet" href="/Proyecto Final KL/pages/decimal-to-sexagesimal/decimal-to-sexagesimal.css">
+</head>
+<body>
+    <form name="decimal-to-sexagesimal">
+        <label for="number_to_convert">Número a convertir</label>
+        <input type="number" name="number_to_convert" id="number_to_convert" placeholder="0" min="0">
+        <br>
+        <select name="unit_type_from" id="unit_type_from">
+            <option value="D">Decimal</option>
+        </select>
+
+        <br><br>
+
+        <label for="unit_type_to">Unidad a la cual convertir</label>
+        <select name="unit_type_to" id="unit_type_to">
+            <option value="S">Sexagesimal</option>
+        </select>
+
+        <br><br>
+
+        <button type="button" onclick="convertNumber()">Convertir</button>
+    </form>
+
+    <p id="result"></p>
+
+    <a href="/Proyecto Final KL/index.html" class="volver">Volver</a>
+
+    <script src="/Proyecto Final KL/pages/decimal-to-sexagesimal/decimal-to-sexagesimal.js"></script>
+</body>
+</html>
+
+
+
+
+

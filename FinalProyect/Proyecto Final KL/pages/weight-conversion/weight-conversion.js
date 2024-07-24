@@ -4,6 +4,7 @@ function convert() {
     const toUnit = document.getElementById('unit_type_to').value;
     let result;
 
+
     // Conversión a gramos (unidad base)
     switch (fromUnit) {
         case 'Ton':
@@ -15,7 +16,7 @@ function convert() {
         case 'Lb':
             result = number * 453.592; // 1 libra = 453.592 gramos
             break;
-        case 'G':
+        case 'g':
             result = number; // ya está en gramos
             break;
         case 'Onz':
@@ -36,7 +37,7 @@ function convert() {
         case 'Lb':
             result = result / 453.592; // 1 libra = 453.592 gramos
             break;
-        case 'G':
+        case 'g':
             break; // ya está en gramos
         case 'Onz':
             result = result / 28.3495; // 1 onza = 28.3495 gramos
@@ -44,6 +45,8 @@ function convert() {
         default:
             break;
     }
+    
+
 
     document.getElementById('result').innerText = `Resultado: ${result} ${toUnit}`;
 }
