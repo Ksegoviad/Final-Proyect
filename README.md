@@ -66,5 +66,25 @@
   ### Selection of source drive and destination drive.
   ### Show the conversion result.
 ## 4. Temperature Converter
-### Conversion between different temperature units:
+  ### Conversion between different temperature units:
+  - Celsius (°C)
+  - Fahrenheit (°F)
+  - Kelvin (K)
+  - Rankine (°R)
 
+  ### Entering a number to convert.
+  ### Selection of source drive and destination drive.
+  ### Show the conversion result.
+  ### Button to perform the conversion.
+## 5. Decimal to Binary Converter.
+  ### Entering a decimal number to convert.
+  ### Button to start conversion.
+  ### Show the binary number resulting from the conversion.
+  ### Validate the input to ensure that it is a valid decimal number.
+  ### Ability to convert both positive and negative decimal numbers.
+## 6. Calculator from Decimals to Sexagesimals.
+  ### Conversion decimal to sexagesimal numbers.
+  ### Entering a number to convert.
+  ### Selection of source drive and destination drive.
+  ### Show the conversion result
+  ### Button to perform the conversion.
